@@ -287,6 +287,11 @@
                             </div>
                         </div>
                     </div>
+                    {% if line_up %}
+                        <div class="col-sm-12" style="margin-bottom: 30px">
+                            {% include "web/vehicles/launch_vehicle/line_up.html" %}
+                        </div>
+                    {% endif %}
                     {% if upcoming_vehicle_launches|length > 0 %}
                         <div class="col-md-12 ml-auto mx-auto mr-auto text-lg-center text-center">
                             <h2>

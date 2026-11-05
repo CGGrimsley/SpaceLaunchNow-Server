@@ -1,0 +1,31 @@
+{% load static humanize %}
+{# Line-up of rockets flying in the next 30 days, drawn to scale. Selecting one opens a 3D viewer. #}
+{# Data: web/lineup.py. Front end: static/lineup (built from frontend/lineup). #}
+<link rel="stylesheet" href="{% static 'lineup/lineup.css' %}">
+<section class="ln-module" id="ln-module" aria-labelledby="ln-title"
+         data-model-base="{% static 'lineup/models/' %}">
+    <div class="ln-eyebrow">Line-up · {{ line_up.window_label }}</div>
+    <h3 id="ln-title" class="ln-title">{{ line_up.title }}</h3>
+    {% if line_up.rockets %}
+        <div class="ln-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/>
+            </svg>Select a rocket to explore it in 3D
+        </div>
+    {% endif %}
+    <div id="ln-chart"></div>
+    <div id="ln-ranked"></div>
+    <p class="ln-caption" id="ln-caption"></p>
+    <div class="ln-stats" id="ln-stats">
+        {% with s=line_up.stats %}
+            <div class="ln-stat"><div class="ln-stat-label">Height</div>{% if s.height %}<div class="ln-stat-value">{{ s.height }}<span>m</span></div>{% else %}<div class="ln-stat-na">Not published</div>{% endif %}</div>
+            <div class="ln-stat"><div class="ln-stat-label">Diameter</div>{% if s.diameter %}<div class="ln-stat-value">{{ s.diameter }}<span>m</span></div>{% else %}<div class="ln-stat-na">Not published</div>{% endif %}</div>
+            <div class="ln-stat"><div class="ln-stat-label">To low Earth orbit</div>{% if s.leo %}<div class="ln-stat-value">{{ s.leo|intcomma }}<span>kg</span></div>{% else %}<div class="ln-stat-na">Not published</div>{% endif %}</div>
+            <div class="ln-stat"><div class="ln-stat-label">To GTO</div>{% if s.gto %}<div class="ln-stat-value">{{ s.gto|intcomma }}<span>kg</span></div>{% else %}<div class="ln-stat-na">Not published</div>{% endif %}</div>
+            <div class="ln-stat"><div class="ln-stat-label">Liftoff thrust</div>{% if s.thrust %}<div class="ln-stat-value">{{ s.thrust|intcomma }}<span>kN</span></div>{% else %}<div class="ln-stat-na">Not published</div>{% endif %}</div>
+            <div class="ln-stat"><div class="ln-stat-label">Liftoff mass</div>{% if s.mass %}<div class="ln-stat-value">{{ s.mass|intcomma }}<span>t</span></div>{% else %}<div class="ln-stat-na">Not published</div>{% endif %}</div>
+        {% endwith %}
+    </div>
+</section>
+{{ line_up|json_script:"ln-data" }}
+<script src="{% static 'lineup/lineup.js' %}" defer></script>
