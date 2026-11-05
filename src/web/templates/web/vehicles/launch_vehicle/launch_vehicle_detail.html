@@ -38,6 +38,9 @@
     {% endif %}
     <meta name="twitter:site" content="@SpaceLaunchNow">
     <meta name="twitter:creator" content="@SpaceLaunchNow">
+    {% if line_up %}
+        <link rel="stylesheet" href="{% static 'lineup/lineup.css' %}">
+    {% endif %}
 {% endblock %}
 
 

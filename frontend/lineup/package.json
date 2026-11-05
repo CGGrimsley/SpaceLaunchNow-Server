@@ -1,0 +1,15 @@
+{
+  "name": "sln-lineup",
+  "private": true,
+  "description": "Rocket line-up + 3D viewer for launch vehicle pages. See README.md.",
+  "scripts": {
+    "build": "./build.sh"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "4.5.1",
+    "esbuild": "0.28.2"
+  }
+}

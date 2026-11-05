@@ -1,7 +1,7 @@
 {% load static humanize %}
 {# Line-up of rockets flying in the next 30 days, drawn to scale. Selecting one opens a 3D viewer. #}
 {# Data: web/lineup.py. Front end: static/lineup (built from frontend/lineup). #}
-<link rel="stylesheet" href="{% static 'lineup/lineup.css' %}">
+{# Its stylesheet is linked from the page's extrahead block. #}
 <section class="ln-module" id="ln-module" aria-labelledby="ln-title"
          data-model-base="{% static 'lineup/models/' %}">
     <div class="ln-eyebrow">Line-up · {{ line_up.window_label }}</div>
