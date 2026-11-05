@@ -1,0 +1,6 @@
+# Build tooling for the line-up module. Kept here so the root .gitignore stays untouched.
+node_modules/
+dist/
+# The root **.json credential guard would hide the build manifest; it holds no secrets.
+!package.json
+!package-lock.json

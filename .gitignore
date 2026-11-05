@@ -32,9 +32,6 @@ docker/*.backup
 # normative artifacts that must be committed and reviewed. Keep this specific --
 # the **.json rule exists to stop service-account keys being committed.
 !src/bot/contracts/*.json
-# The line-up frontend build manifest pins its tool versions (see frontend/lineup/README.md).
-!frontend/lineup/package.json
-!frontend/lineup/package-lock.json
 **kubeconfig**
 google-oauth-secret.yaml
 
@@ -45,7 +42,3 @@ k8s/monitoring/auth
 # Subagent-driven-development scratch (ledgers, briefs, review packages)
 .superpowers/
 vendor/
-
-# line-up 3D viewer build tooling
-frontend/lineup/node_modules/
-frontend/lineup/dist/

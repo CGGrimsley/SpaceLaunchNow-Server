@@ -14,6 +14,34 @@ The built files are committed, so nothing here runs at deploy time:
 | `src/static/lineup/models/*.glb` | Detailed models, meshopt-compressed, 512 px WebP textures. |
 | `docs/mockups/rocket-lineup-3d/index.html` | Standalone mockup with sample figures. |
 
+## Wiring it in
+
+This branch only adds files; no existing file is changed. To show the module on launch
+vehicle pages, make these three edits:
+
+1. `src/web/views.py`, import the helper and add it to the `launch_vehicle_id` context:
+
+       from web.lineup import get_line_up
+       ...
+                           "previous_vehicle_launches": previous_vehicle_launches,
+                           "line_up": get_line_up(vehicle),
+
+2. `launch_vehicle_detail.html`, at the end of `{% block extrahead %}`:
+
+       {% if line_up %}
+           <link rel="stylesheet" href="{% static 'lineup/lineup.css' %}">
+       {% endif %}
+
+3. Same template, just above the "Upcoming Spaceflights" section:
+
+       {% if line_up %}
+           <div class="col-sm-12" style="margin-bottom: 30px">
+               {% include "web/vehicles/launch_vehicle/line_up.html" %}
+           </div>
+       {% endif %}
+
+The tests in `src/web/tests_lineup.py` cover `web/lineup.py` and run without the wiring.
+
 ## Build
 
     cd frontend/lineup

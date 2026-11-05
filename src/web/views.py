@@ -42,7 +42,6 @@ from bot.utils.util import get_SLN_url
 from prefetches import get_prefetched_launch_queryset
 from web.filters.launch_filters import LaunchListFilter
 from web.filters.launch_vehicle_filters import LauncherConfigListFilter
-from web.lineup import get_line_up
 from web.tables.launch_table import LaunchTable
 from web.tables.launch_vehicle_table import LaunchVehicleTable
 
@@ -826,7 +825,6 @@ def launch_vehicle_id(request, id):
                     "previous_launches": previous_launches,
                     "upcoming_vehicle_launches": upcoming_vehicle_launches,
                     "previous_vehicle_launches": previous_vehicle_launches,
-                    "line_up": get_line_up(vehicle),
                 },
             )
         except LauncherConfig.DoesNotExist as err:
