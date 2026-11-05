@@ -31,6 +31,14 @@ export const CREDITS = {
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
  },
+ "fireflyalpha": {
+  "title": "Firefly Alpha Rocket",
+  "source": "https://sketchfab.com/3d-models/firefly-alpha-rocket-9ae27271818d4a4dbe8290cadb044a11",
+  "author": "clarence365",
+  "authorUrl": "https://sketchfab.com/clarence365",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+ },
  "longmarch5": {
   "title": "Long March 5 rocket",
   "source": "https://sketchfab.com/3d-models/long-march-5-rocket-4da241732264439c9112e66ebc3e16e8",
@@ -39,11 +47,35 @@ export const CREDITS = {
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
  },
+ "lvm3": {
+  "title": "GSLV Mk3",
+  "source": "https://sketchfab.com/3d-models/gslv-mk3-0426922358b4444f9887bcd551d3a5cb",
+  "author": "Jainesh Pathak",
+  "authorUrl": "https://sketchfab.com/spectraut2",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "neutron": {
+  "title": "Rocketlab Neutron Rocket",
+  "source": "https://sketchfab.com/3d-models/rocketlab-neutron-rocket-ca4bbcb8e0ba4a128c78efa5d67524c3",
+  "author": "clarence365",
+  "authorUrl": "https://sketchfab.com/clarence365",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+ },
  "newglenn": {
   "title": "Blue Origin New Glenn Rocket",
   "source": "https://sketchfab.com/3d-models/blue-origin-new-glenn-rocket-61de32fc7f8c4d2a8945662fcd51a172",
   "author": "SunnyChen753/SW fan",
   "authorUrl": "https://sketchfab.com/sunnychen753",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "pslv": {
+  "title": "PSLV C40",
+  "source": "https://sketchfab.com/3d-models/pslv-c40-c7066310704040a9bf0c86d7d21ab94f",
+  "author": "Neel3Dartist",
+  "authorUrl": "https://sketchfab.com/Neel91",
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
  },
