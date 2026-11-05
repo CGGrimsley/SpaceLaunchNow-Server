@@ -69,7 +69,12 @@ function silSVG(id, cls) {
 
 // ---------- line-up chart (desktop) ----------
 // Keep axis labels inside their slot (~6.6px per character at 12px).
-const fit = (s, w) => { const n = Math.max(4, Math.floor((w - 6) / 6.6)); return s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s; };
+const SHORT = [[/^Long March /i, 'LM-'], [/^Space Launch System \(SLS\)/i, 'SLS'], [/^Firefly /i, '']];
+const fit = (s, w) => {
+  const n = Math.max(4, Math.floor((w - 6) / 6.6));
+  if (s.length > n) s = SHORT.reduce((acc, [re, rep]) => acc.replace(re, rep), s);
+  return s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s;
+};
 const chartEl = $('#ln-chart'), listEl = $('#ln-ranked');
 function renderChart() {
   const W = Math.floor(chartEl.clientWidth), Hpx = 380, top = 26, left = 48, bottom = 44;

@@ -53,6 +53,26 @@ class MatchAssetTests(SimpleTestCase):
             "Vega-C": "vegac",
             "Kuaizhou-1A": "kuaizhou",
             "Electron": "electron",
+            "Long March 2C": "lm2c",
+            "Long March 2D": "lm2d",
+            "Long March 3B/E": "lm3b",
+            "Long March 4C": "lm4c",
+            "Long March 5B": "lm5b",
+            "Long March 6A": "lm6a",
+            "Long March 7": "lm7",
+            "Long March 7A": "lm7a",
+            "Long March 8": "lm8",
+            "Long March 12": "lm12",
+            "Zhuque-2E": "zhuque2e",
+            "Ceres-1": "ceres1",
+            "Kinetica-1": "kinetica1",
+            "Gravity-1": "gravity1",
+            "PSLV-XL": "pslv",
+            "LVM-3": "lvm3",
+            "H3-22S": "h3",
+            "Angara A5": "angaraa5",
+            "Firefly Alpha": "fireflyalpha",
+            "Neutron": "neutron",
         }
         for name, key in cases.items():
             with self.subTest(name=name):
@@ -62,7 +82,7 @@ class MatchAssetTests(SimpleTestCase):
         self.assertEqual(match_asset("Falcon Heavy"), "falconheavy")
 
     def test_unknown_vehicle_has_no_asset(self):
-        self.assertIsNone(match_asset("Zhuque-2", None, ""))
+        self.assertIsNone(match_asset("Tianlong-3", None, ""))
 
     def test_falls_back_to_short_name(self):
         self.assertEqual(match_asset(None, "Electron"), "electron")
