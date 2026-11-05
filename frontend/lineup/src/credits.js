@@ -118,5 +118,167 @@ export const CREDITS = {
   "authorUrl": "https://science.nasa.gov/3d-resources/",
   "license": "NASA media guidelines",
   "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+ },
+ "lm2c": {
+  "title": "Long March 2C",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "lm2d": {
+  "title": "Long March 2D",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "lm3b": {
+  "title": "Long March 3B",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "lm4c": {
+  "title": "Long March 4C",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "lm5b": {
+  "title": "Long March 5B",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "lm6a": {
+  "title": "Long March 6A",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "lm7": {
+  "title": "Long March 7",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "lm7a": {
+  "title": "Long March 7A",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "lm8": {
+  "title": "Long March 8",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "lm12": {
+  "title": "Long March 12",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "zhuque2e": {
+  "title": "Zhuque-2E",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "ceres1": {
+  "title": "Ceres-1",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "kinetica1": {
+  "title": "Kinetica-1",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "gravity1": {
+  "title": "Gravity-1",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "angaraa5": {
+  "title": "Angara A5",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "kuaizhou": {
+  "title": "Kuaizhou 1A",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "h3": {
+  "title": "H3",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
+ },
+ "soyuz": {
+  "title": "Soyuz 2.1b",
+  "source": "https://github.com/CGGrimsley",
+  "author": "CGGrimsley",
+  "authorUrl": "https://github.com/CGGrimsley",
+  "license": "made for Space Launch Now",
+  "licenseUrl": "https://github.com/CGGrimsley",
+  "original": true
  }
 };

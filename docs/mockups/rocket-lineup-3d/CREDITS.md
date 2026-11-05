@@ -2,6 +2,8 @@
 
 Models live in `src/static/lineup/models/` and are scaled at runtime to each vehicle's published length.
 
+## Third-party models
+
 - **ariane6**: "[ESA Ariane 6 (64)](https://sketchfab.com/3d-models/esa-ariane-6-64-98a68de96a61406cb68b8f8ac89eb5ef)" by [Clarence365](https://sketchfab.com/clarence365), CC BY 4.0
 - **atlasv**: "[Atlas V 551](https://science.nasa.gov/3d-resources/)" by [NASA](https://science.nasa.gov/3d-resources/), NASA media guidelines
 - **electron**: "[Electron - Rocket Lab](https://sketchfab.com/3d-models/electron-rocket-lab-0376dfab27574a909cb8714841379894)" by [Stanley Creative](https://sketchfab.com/Stanley_Creative), CC BY 4.0
@@ -18,5 +20,10 @@ Models live in `src/static/lineup/models/` and are scaled at runtime to each veh
 - **vegac**: "[Vega-c](https://sketchfab.com/3d-models/vega-c-8b74cf8d08bc419e966d7ede30c27bf6)" by [SethAlevy](https://sketchfab.com/SethAlevy), CC BY 4.0
 - **vulcan**: "[Vulcan Centaur Rocket](https://sketchfab.com/3d-models/vulcan-centaur-rocket-bad44d1096324c3d9fe84d0f0ea7a64b)" by [Lucky Lucas](https://sketchfab.com/lucky_lucas), CC BY 4.0
 
-Vehicles without a model get a preview model generated from their line-up silhouette.
 The PSLV model's exhaust-plume mesh was removed so the vehicle scales to its real length.
+
+## Original models
+
+Built in Blender for the line-up from the line-up silhouettes, by [CGGrimsley](https://github.com/CGGrimsley):
+
+Angara A5, Ceres-1, Gravity-1, H3, Kinetica-1, Kuaizhou 1A, Long March 12, Long March 2C, Long March 2D, Long March 3B, Long March 4C, Long March 5B, Long March 6A, Long March 7, Long March 7A, Long March 8, Soyuz 2.1b, Zhuque-2E.

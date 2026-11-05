@@ -308,7 +308,9 @@ function setModel(r, m) {
 }
 function renderCredit(r, real) {
   const c = r.credit;
-  $('#ln-credit').innerHTML = real && c
+  $('#ln-credit').innerHTML = real && c && c.original
+    ? `3D model by <a href="${c.authorUrl}" target="_blank" rel="noopener">${c.author}</a>, built from the line-up silhouette. Scaled to published height.`
+    : real && c
     ? `3D model: <a href="${c.source}" target="_blank" rel="noopener">“${c.title}”</a> by <a href="${c.authorUrl}" target="_blank" rel="noopener">${c.author}</a>, <a href="${c.licenseUrl}" target="_blank" rel="noopener">${c.license}</a>. Scaled to published height.`
     : 'Preview model generated from the line-up silhouette. A detailed model can replace it.';
 }
